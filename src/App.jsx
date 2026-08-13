@@ -810,8 +810,8 @@ function Navbar() {
     <>
       <header className={"pf-nav" + (scrolled ? " is-scrolled" : "")}>
         <a href="#home" className="pf-nav-brand" onClick={() => setOpen(false)}>
-          <span className="pf-nav-brand-mark">K</span>
-          Keyra
+          <span className="pf-nav-brand-mark">A</span>
+          Andi Ashraf Hak Bisyu
         </a>
         <nav className="pf-nav-links" aria-label="Primary">
           {NAV_LINKS.map((l) => (
@@ -862,7 +862,7 @@ function Hero() {
             Turning business problems into interfaces, dashboards, and decisions.
           </Reveal>
           <Reveal as="p" className="pf-hero-sub" delay={160}>
-            Keyra — a Digital Business student working across UI/UX design, web development, data science &amp;
+            Andi Ashraf Hak Bisyu — a Digital Business student working across UI/UX design, web development, data science &amp;
             machine learning, and project leadership. Eighteen projects, one throughline.
           </Reveal>
           <Reveal delay={240} className="pf-hero-cta">
@@ -1321,7 +1321,7 @@ function ContactFooter() {
         <div className="pf-container">
           <div className="pf-footer-top">
             <div>
-              <div className="pf-footer-brand">Keyra</div>
+              <div className="pf-footer-brand">Andi Ashraf Hak Bisyu</div>
               <p className="pf-footer-tag">Digital Business student — UI/UX, web development, data science &amp; project leadership.</p>
             </div>
             <nav className="pf-footer-links" aria-label="Footer">
@@ -1335,8 +1335,8 @@ function ContactFooter() {
             </nav>
           </div>
           <div className="pf-footer-bottom">
-            <span>© {new Date().getFullYear()} Keyra. All work shown with permission.</span>
-            <span>Designed &amp; built by Keyra</span>
+            <span>© {new Date().getFullYear()} Andi Ashraf Hak Bisyu. All work shown with permission.</span>
+            <span>Designed &amp; built by Andi Ashraf Hak Bisyu</span>
           </div>
         </div>
       </footer>
