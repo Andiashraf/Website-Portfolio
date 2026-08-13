@@ -92,7 +92,7 @@ const PROJECTS = [
     description:
       "Developed and implemented a modern, responsive leadership learning platform focused on delivering an engaging and accessible digital learning experience.",
     tech: ["Web Development", "Web Design"],
-    links: [{ label: "Live Demo", url: "https://profasleadership.tech/?utm_source=chatgpt.com" }],
+    links: [{ label: "Live Demo", url: "https://profasleadership.tech/" }],
   },
   {
     id: "helia-rosy",
