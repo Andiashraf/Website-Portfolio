@@ -82,8 +82,34 @@ const PROJECTS = [
     links: [],
   },
   {
-    id: "sanitasi-bioskop",
+    id: "profas-leadership",
     num: "06",
+    title: "Profas Leadership",
+    tier: "featured",
+    categories: ["web"],
+    role: "Web Developer",
+    img: "assets/profas-leadership.png",
+    description:
+      "Developed and implemented a modern, responsive leadership learning platform focused on delivering an engaging and accessible digital learning experience.",
+    tech: ["Web Development", "Web Design"],
+    links: [{ label: "Live Demo", url: "https://profasleadership.tech/?utm_source=chatgpt.com" }],
+  },
+  {
+    id: "helia-rosy",
+    num: "07",
+    title: "Helia Rosy",
+    tier: "featured",
+    categories: ["web"],
+    role: "Web Developer",
+    img: "assets/helia-rosy.png",
+    description:
+      "Developed a dedicated website with a modern, professional, and user-friendly interface to establish a strong digital presence.",
+    tech: ["Web Development", "Web Design"],
+    links: [{ label: "Live Demo", url: "https://helia-rosy.vercel.app/" }],
+  },
+  {
+    id: "sanitasi-bioskop",
+    num: "08",
     title: "Cinema Sanitation Inspection",
     tier: "compact",
     categories: ["web"],
@@ -93,7 +119,7 @@ const PROJECTS = [
   },
   {
     id: "pengelolaan-sampah",
-    num: "07",
+    num: "09",
     title: "Waste Management Platform",
     tier: "compact",
     categories: ["web"],
@@ -103,7 +129,7 @@ const PROJECTS = [
   },
   {
     id: "limbah-cair",
-    num: "08",
+    num: "10",
     title: "Household Wastewater Management",
     tier: "compact",
     categories: ["web"],
@@ -113,7 +139,7 @@ const PROJECTS = [
   },
   {
     id: "makanan-minuman",
-    num: "09",
+    num: "11",
     title: "Food & Beverage Management",
     tier: "compact",
     categories: ["web"],
@@ -123,7 +149,7 @@ const PROJECTS = [
   },
   {
     id: "jamban-sehat",
-    num: "10",
+    num: "12",
     title: "Safe Sanitation Access",
     tier: "compact",
     categories: ["web"],
@@ -133,7 +159,7 @@ const PROJECTS = [
   },
   {
     id: "sanitasi-rumah-makan",
-    num: "11",
+    num: "13",
     title: "Restaurant Sanitation",
     tier: "compact",
     categories: ["web"],
@@ -143,7 +169,7 @@ const PROJECTS = [
   },
   {
     id: "aplikasi-inspeksi-bioskop",
-    num: "12",
+    num: "14",
     title: "Cinema Sanitation App",
     tier: "compact",
     categories: ["web"],
@@ -153,7 +179,7 @@ const PROJECTS = [
   },
   {
     id: "fanzyy",
-    num: "13",
+    num: "15",
     title: "Fanzyy.id",
     tier: "secondary",
     categories: ["management"],
@@ -167,7 +193,7 @@ const PROJECTS = [
   },
   {
     id: "simulasi-gaya",
-    num: "14",
+    num: "16",
     title: "Simulasi Gaya",
     tier: "secondary",
     categories: ["management"],
@@ -178,7 +204,7 @@ const PROJECTS = [
   },
   {
     id: "simulasi-gaya-website",
-    num: "15",
+    num: "17",
     title: "Simulasi Gaya — Agency Website",
     tier: "compact",
     categories: ["web"],
@@ -188,7 +214,7 @@ const PROJECTS = [
   },
   {
     id: "sentiment-analysis",
-    num: "16",
+    num: "18",
     title: "Sentiment Analysis & Machine Learning",
     tier: "secondary",
     categories: ["datascience", "ml"],
@@ -197,16 +223,6 @@ const PROJECTS = [
       "A sentiment-analysis study on a widely-discussed public topic, built with Kelompok 19 — covering data collection, processing, modelling, and interpretation.",
     tech: ["Data Collection", "Data Processing", "Machine Learning", "Sentiment Analysis"],
     links: [{ label: "Project Files", url: "https://drive.google.com/drive/folders/11941MTE3_bm4_TGgAnzjBQ_OZwVpZKms" }],
-  },
-  {
-    id: "helia-rosy",
-    num: "17",
-    title: "Helia Rosy",
-    tier: "secondary",
-    categories: ["web"],
-    role: "Web Developer",
-    description: "A fashion e-commerce website.",
-    links: [{ label: "Live Demo", url: "https://helia-rosy.vercel.app/" }],
   },
 ];
 
@@ -228,6 +244,7 @@ const EXPERIENCE = [
     blurb: "Building and shipping functional websites end to end.",
     projectIds: [
       "suara-umkm",
+      "profas-leadership",
       "sanitasi-bioskop",
       "pengelolaan-sampah",
       "limbah-cair",
@@ -846,7 +863,7 @@ function Hero() {
           </Reveal>
           <Reveal as="p" className="pf-hero-sub" delay={160}>
             Keyra — a Digital Business student working across UI/UX design, web development, data science &amp;
-            machine learning, and project leadership. Seventeen projects, one throughline.
+            machine learning, and project leadership. Eighteen projects, one throughline.
           </Reveal>
           <Reveal delay={240} className="pf-hero-cta">
             <a href="#work" className="pf-btn pf-btn-primary">
@@ -883,7 +900,7 @@ function Hero() {
             </ul>
             <div className="pf-hero-panel-foot">
               <div>
-                <strong>17</strong>
+                <strong>18</strong>
                 <span>Projects</span>
               </div>
               <div>
@@ -995,7 +1012,7 @@ function FeaturedProjectCard({ project, index, onOpen }) {
       </div>
       <div className="pf-featured-body">
         <div className="pf-featured-kicker">
-          <span className="pf-idx">№ {project.num} / 17</span>
+          <span className="pf-idx">№ {project.num} / 18</span>
           {categoryLabels(project.categories).map((c) => (
             <span key={c} className="pf-tag">
               {c}
@@ -1082,7 +1099,7 @@ function ProjectDetailModal({ project, onClose }) {
         <div className="pf-modal" role="dialog" aria-modal="true" aria-labelledby="pf-modal-title">
           <div className="pf-modal-head">
             <div>
-              <span className="pf-idx">№ {project.num} / 17</span>
+              <span className="pf-idx">№ {project.num} / 18</span>
               <h3 id="pf-modal-title">{project.title}</h3>
               <div className="pf-modal-tags">
                 {categoryLabels(project.categories).map((c) => (
