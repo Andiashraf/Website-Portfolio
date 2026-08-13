@@ -417,10 +417,10 @@ const CSS_TOKENS = `
   transition: transform 0.35s var(--ease), background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   white-space: nowrap;
 }
-.pf-btn-primary { background: var(--ink); color: var(--paper); }
-.pf-btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
-.pf-btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
-.pf-btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+.pf-root .pf-btn-primary { background: var(--ink); color: var(--paper); }
+.pf-root .pf-btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
+.pf-root .pf-btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
+.pf-root .pf-btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
 .pf-btn:focus-visible, .pf-link-arrow:focus-visible, .pf-tab:focus-visible, .pf-card:focus-visible, .pf-modal-close:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
